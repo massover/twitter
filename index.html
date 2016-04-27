@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Voxy Twitter Feed</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+
+        html, body, .outer {
+            margin: 0;
+            height: 100%;
+
+        }
+        .outer {
+            background-image: url('background.jpg');
+            background-size: auto 100%;
+            background-position: 50%;
+
+        }
+        @media only screen and (min-aspect-ratio: 3/2) {
+            .outer {
+                background-size: 100% auto;
+            }
+        }
+        .inner {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            margin: 0 auto;
+            width: 100%;
+            max-width: 520px;
+            background-color: rgba(255, 255, 255, .75);
+            border-radius: 2em;
+        }
+        .logo {
+            margin: 2em auto;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container-fluid outer">
+        <div class="inner text-center">
+            <img class="logo" src="voxy-logo.png"/>
+	    <a 
+		class="twitter-timeline" 
+		href="https://twitter.com/search?q=%40voxy" 
+		data-widget-id="725364126739009536"
+                data-chrome="transparent"
+	    >
+		Tweets about @voxy
+	    </a>
+        </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </body>
+</html>
+
+
+
+
